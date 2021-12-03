@@ -1,0 +1,16 @@
+html {
+  font-family: 'Noto Sans',sans-serif;
+  line-height: 1;
+  box-sizing: html {
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+  }
+}
+
+body{
+  margin:0;
+  padding: 0;
+}
