@@ -1,6 +1,6 @@
 html {
   font-family: 'Noto Sans',sans-serif;
-  line-height: 1;
+  line-height: 1.5;
   box-sizing: border-box;
   }
 
@@ -30,9 +30,14 @@ header {
   margin-left: 2rem;
 }
 
+header img {
+  width:72px;
+}
+
 .logo {
   width: 10%;
 }
+
 nav {
   width:80%;
 }
@@ -41,13 +46,30 @@ nav ul {
   list-style-type: none;
   display:flex;
   justify-content: space-around;
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
 color: #000;
 transition: color .2s;
+text-decoration: none;
 }
 
-.card {
-  opacity: 70%;
+/* .card {
+  opacity: 60%;
+} */
+
+nav a:hover {
+  color: #fff;
+}
+
+.banner-text {
+  padding: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.artwork {
+  padding: 1rem;
 }
