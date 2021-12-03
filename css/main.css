@@ -7,7 +7,6 @@ html {
   *, *::before, *::after {
     box-sizing: inherit;
   }
-}
 
 body{
   margin:0;
@@ -28,8 +27,12 @@ header {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  margin-left: 2rem;
 }
 
+.logo {
+  width: 20%;
+}
 nav {
   width:80%;
 }
@@ -41,5 +44,6 @@ nav ul {
 }
 
 nav a {
-
+color: #000;
+transition: color .2s;
 }
