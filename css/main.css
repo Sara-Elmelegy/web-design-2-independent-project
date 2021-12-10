@@ -98,7 +98,7 @@ nav a:hover {
   grid-column: 1 /2;
   align-self: center;
   text-align: center;
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
 }
 
@@ -128,6 +128,16 @@ footer {
   padding: 3rem;
   gap: 1rem;
   background-color: #7abafa;
+}
+
+.icon svg {
+  width: 32px;
+  height: 32px;
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
 }
 
 .pg-container {
@@ -168,6 +178,21 @@ footer {
   transition: all .2s;
   }
 
+.bubble a:hover {
+  background-color: white;
+  color: #7abafa;
+}
+
+.pg-container {
+  padding: 1rem;
+}
+
+.artwork-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem,100%),1fr));
+  gap: 1rem;
+}
+
 @media only screen and (min-width: 53em) {
   .artwork {
     display: flex;
@@ -177,4 +202,10 @@ footer {
   footer {
     flex-direction: row;
   }
+  .bubbles {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 9rem 2rem;
+  }
+
 }
