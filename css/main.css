@@ -18,6 +18,15 @@ img {
   width: 100%;
 }
 
+.skip-links {
+  display: none;
+}
+
+.skip-links a {
+  position: absolute;
+  top: auto;
+}
+
 h1, h2 {
   font-family: 'pacifico', cursive;
   font-size: 2rem;
