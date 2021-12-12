@@ -9,6 +9,14 @@ html {
   box-sizing: inherit;
 }
 
+/* .hero-image {
+  background-image: image("background.jpg");
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
 body {
   margin: 0;
   padding: 0;
@@ -95,18 +103,26 @@ nav a:hover {
   margin-bottom: 2rem;
 }
 
-.card img {
+/* .card img {
   grid-row: 1 / 5;
   grid-column: 1 / 2;
+  border: 10px solid #000;
+} */
+
+.card img {
+  display: flex;
+  flex-direction: column;
   border: 10px solid #000;
 }
 
 .card h2 {
-  grid-row: 3 /4;
-  grid-column: 1 /2;
+  /* grid-row: 3 /4;
+  grid-column: 1 /2; */
+  display: flex;
+  flex-direction: column;
   align-self: center;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0);
   color: #fff;
 }
 
@@ -122,6 +138,7 @@ nav a:hover {
   padding: 2.5rem 1rem;
   transition: all .2s;
   border-radius: 25px;
+  background-color: #76c284;
 }
 
 .card a:hover {
@@ -135,7 +152,7 @@ footer {
   justify-content: space-between;
   padding: 3rem;
   gap: 1rem;
-  background-color: #7abafa;
+  background-color: #76c284;
 }
 
 .icon svg {
@@ -146,19 +163,21 @@ footer {
 .social {
   display: flex;
   gap: 1rem;
+  width: 30%;
+  height: 30%;
 }
 
 .pg-container {
   padding: 1rem;
 }
 
-.bubbles {
+/* .bubbles {
   padding: 1rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} */
 
 .bubble {
   display: inline-block;
@@ -198,6 +217,10 @@ footer {
   gap: 1rem;
 } */
 
+/* .social {
+  width: 30%;
+  height: 30%;
+} */
 @media only screen and (min-width: 53em) {
 
   .artwork {
@@ -213,6 +236,11 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     padding: 9rem 2rem;
+  }
+
+  .card img {
+    display: flex;
+    flex-direction: row;
   }
 
 }
