@@ -28,7 +28,7 @@ img {
 }
 
 h1, h2 {
-  font-family: 'pacifico', cursive;
+  font-family: "pacifico", cursive;
   font-size: 2rem;
 }
 
@@ -171,7 +171,7 @@ footer {
   margin-right: 0;
   text-align: center;
   color: #fff;
-  }
+}
 
 .b2 {
   background-color: #7abafa;
@@ -192,17 +192,14 @@ footer {
   color: #7abafa;
 } */
 
-.pg-container {
-  padding: 1rem;
-}
-
-.artwork-grid {
+/* .artwork-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(15rem,100%),1fr));
   gap: 1rem;
-}
+} */
 
 @media only screen and (min-width: 53em) {
+
   .artwork {
     display: flex;
     justify-content: space-around;
@@ -211,6 +208,7 @@ footer {
   footer {
     flex-direction: row;
   }
+
   .bubbles {
     flex-direction: row;
     justify-content: space-around;
