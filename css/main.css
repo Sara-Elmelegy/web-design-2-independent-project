@@ -91,7 +91,7 @@ nav a:hover {
 .artwork h2 {
   font-size: 1.2rem;
   color: #000;
-  background: rgba(255, 255, 255, 0.459);
+  background: rgba(255, 255, 255, .459);
   padding: 10px 30px;
 }
 
@@ -120,25 +120,24 @@ nav a:hover {
   z-index: -1;
 }
 
-.card-wrapper a{
+.card-wrapper a {
   align-self: center;
   justify-self: center;
   text-align: center;
   text-decoration: none;
   color: #000;
   border: 1px solid #000;
-  padding: 0.5rem 1rem;
-font-size: 0.6rem;
-transition: all 0.2s;
-border-radius: 10px;
-background-color: #76c2847a;
+  padding: .5rem 1rem;
+  font-size: .6rem;
+  transition: all .2s;
+  border-radius: 10px;
+  background-color: #76c284;
 }
 
 .card-wrapper a:hover {
   background-color: #000;
   color: #fff;
 }
-
 
 footer {
   display: flex;
