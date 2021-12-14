@@ -9,27 +9,6 @@ html {
   box-sizing: inherit;
 }
 
-/* .hero-image {
-  background-image: image("background.jpg");
-  height: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
-.section2,section3 {
-  position: relative;
-}
-
-/* #section3 {
-  position: relative;
-} */
-
-.hero-image {
-  position: absolute;
-  z-index: -1;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -91,10 +70,6 @@ nav a {
   text-decoration: none;
 }
 
-/* .card {
-  opacity: 60%;
-} */
-
 nav a:hover {
   color: #fff;
 }
@@ -107,57 +82,63 @@ nav a:hover {
 
 .artwork {
   padding: 1rem;
-}
-
-.card {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  margin-bottom: 2rem;
-}
-
-/* .card img {
-  grid-row: 1 / 5;
-  grid-column: 1 / 2;
-  border: 10px solid #000;
-} */
-
-.card img {
   display: flex;
-  flex-direction: column;
-  border: 10px solid #000;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.card h2 {
-  /* grid-row: 3 /4;
-  grid-column: 1 /2; */
-  display: flex;
-  flex-direction: column;
-  align-self: center;
+.artwork h2 {
+  font-size: 1.2rem;
+  color: #000;
+  background: rgba(255, 255, 255, 0.459);
+  padding: 10px 30px;
+}
+
+.card-wrapper {
+  position: relative;
+  height: 500px;
+  width: 30%;
+  min-width: 300px;
+  max-width: 500px;
+  overflow: hidden;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0);
-  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 10px;
 }
 
-.card a {
-  grid-row: 4 /5;
-  grid-column: 1 /2;
-  align-self: start;
+.artwork img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+  z-index: -1;
+}
+
+.card-wrapper a{
+  align-self: center;
   justify-self: center;
   text-align: center;
   text-decoration: none;
   color: #000;
-  border: 5px solid #000;
-  padding: 2.5rem 1rem;
-  transition: all .2s;
-  border-radius: 25px;
-  background-color: #76c284;
+  border: 1px solid #000;
+  padding: 0.5rem 1rem;
+font-size: 0.6rem;
+transition: all 0.2s;
+border-radius: 10px;
+background-color: #76c2847a;
 }
 
-.card a:hover {
+.card-wrapper a:hover {
   background-color: #000;
   color: #fff;
 }
+
 
 footer {
   display: flex;
